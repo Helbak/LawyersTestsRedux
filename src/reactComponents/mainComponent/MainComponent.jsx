@@ -3,13 +3,20 @@ import './styles.less';
 import HeaderContainer from '../headerComponent/HeaderComponent.jsx';
 import AskerContainer from '../../containers/askerContainer/AskerContainer.jsx';
 import StartContainer from '../../containers/startContainer/startContainer.jsx';
+import TrialAskerContainer from '../../containers/askerContainer/TrialAskerContainer.js';
+import {connect} from "react-redux";
 
-export default class MainComponent extends Component{
+ class MainComponent extends Component{
 
 getComponent(){
-    const page = this.props
-    // return <AskerContainer/>
-    return <StartContainer/>
+    const page = this.props.page.page;
+    console.log(page);
+    if (page==='start'){
+        return <StartContainer/>
+    };
+    if (page==='asker') {
+        return <AskerContainer/>
+    }
 }
         render() {
         return (
@@ -21,9 +28,18 @@ getComponent(){
                     {this.getComponent()}
                 </div>
                 <div className='main-tests__footer'>
-                    Footer
+                    <TrialAskerContainer/>
+                    <br />
+                    FOOTER
                 </div>
             </div>
         );
     }
 }
+function mapStateToProps(state) {
+    return {
+        page: state.start[0]
+    }
+};
+
+export default connect(mapStateToProps)(MainComponent);

@@ -1,11 +1,9 @@
-export default class StartReducer{
-    constructor(){
-        this.page = 'topics'
-    }
-    getPage = function () {
-        return this.page
-    }
-    setPage = function (page) {
-        this.page = page;
-    }
+export default function () {
+
+    return [
+        {
+            page: 'start',
+            topic: 1
+        }
+    ]
 }
