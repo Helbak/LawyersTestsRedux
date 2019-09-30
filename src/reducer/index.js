@@ -3,10 +3,12 @@ import reducerOne from './reducerOne';
 import reducerTwo from './reducerTwo';
 import reducerTopics from './reducerTopics'
 import startReducer from './startReducer'
-// import functionReducer from './functionReducer'
+import functionReducer from './functionReducer'
+import pageReducer from './pageReducer'
 
 const allReducers = combineReducers({
-   // functionReducer: functionReducer,
+    pageReducer: pageReducer,
+   functionReducer: functionReducer,
     start: startReducer,
     topics: reducerTopics,
     quest1: reducerOne,

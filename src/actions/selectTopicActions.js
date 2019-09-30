@@ -1,7 +1,7 @@
 export const actions=(type)=>{
-    alert('now selected topic is: '+ type.topic+ ' number of topic: '+type.num);
+    // alert('now selected topic is: '+ type.topic+ ' number of topic: '+type.num);
     return{
-        type: 'page',
+        type: 'topic',
         payload: type.topic
     }
 };

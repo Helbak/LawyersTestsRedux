@@ -9,9 +9,9 @@ import {connect} from "react-redux";
  class MainComponent extends Component{
 
 getComponent(){
-    const page = this.props.page.page;
+    const page = this.props.page;
     console.log(page);
-    if (page==='start'){
+    if (page===null||page==='start'){
         return <StartContainer/>
     };
     if (page==='asker') {
@@ -29,8 +29,6 @@ getComponent(){
                 </div>
                 <div className='main-tests__footer'>
                     <TrialAskerContainer/>
-                    <br />
-                    FOOTER
                 </div>
             </div>
         );
@@ -38,7 +36,7 @@ getComponent(){
 }
 function mapStateToProps(state) {
     return {
-        page: state.start[0]
+        page: state.pageReducer
     }
 };
 

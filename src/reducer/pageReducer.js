@@ -1,6 +1,6 @@
 export default function (state=null, action) {
     switch (action.type) {
-        case 'topic':
+        case 'page':
             return action.payload;
             break;
         default: return state;
