@@ -22,8 +22,15 @@ class HeaderComponent extends Component {
     }
 }
 function mapStateToProps(state) {
-    return {
-        topic: state.selectTopicReducer
+    if(state.selectTopicReducer===null){
+        return {
+            topic: null
+        }
+    }
+    if(state.selectTopicReducer!==null) {
+        return {
+            topic: state.selectTopicReducer.topic
+        }
     }
 };
 function mapDispatchToProps(dispatch) {

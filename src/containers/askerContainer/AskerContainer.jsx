@@ -11,17 +11,11 @@ import './styles.less';
                     {this.props.quest1[0].question}
                 </div>
                 <div className='asker__center'>
-                    <button className='question'>{this.props.quest1[0].optionsAnswers[0].text}</button>
-                    <button className='question'>{this.props.quest1[0].optionsAnswers[1].text}</button>
-                    <button className='question'>{this.props.quest1[0].optionsAnswers[2].text}</button>
-                    <button className='question'>{this.props.quest1[0].optionsAnswers[3].text}</button>
+                    <button className='question'>{this.props.allQuestion[0][0].optionsAnswers[0].text}</button>
+                    <button className='question'>{this.props.allQuestion[0][0].optionsAnswers[1].text}</button>
+                    <button className='question'>{this.props.allQuestion[0][0].optionsAnswers[2].text}</button>
+                    <button className='question'>{this.props.allQuestion[0][0].optionsAnswers[3].text}</button>
                 </div>
-                {/*<div className='asker__sign'>*/}
-                {/*    <div className='vx' id='notwrong'>V</div>*/}
-                {/*    <div className='vx'>X</div>*/}
-                {/*    <div className='vx'>X</div>*/}
-                {/*    <div className='vx'>X</div>*/}
-                {/*</div>*/}
                 <div className='asker__right'>
                     RESULT
                 </div>
@@ -31,7 +25,9 @@ import './styles.less';
 }
 function mapStateToProps(state) {
     return {
-        quest1: state.quest1
+        quest1: state.quest1,
+        numTopic: state.selectTopicReducer.numTopic,
+        allQuestion: state.allQuestion
     }
 };
 

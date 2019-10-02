@@ -1,9 +1,9 @@
 export default function () {
     return [
         {
-            topicNum: 5,
+            numTopic: 5,
             numQuestion: 1,
-            question: 'Перше питання - 5 тема',
+            question: 'Перше питання - 6а тема',
             topic: 'Перша тема',
             optionsAnswers: [
                 {
@@ -29,9 +29,9 @@ export default function () {
             ]
         },
         {
-            topicNum: 1,
-            num: 2,
-            numQuestion: 'Друге питання - 5а тема',
+            numTopic: 5,
+            numQuestion: 2,
+            question: 'Друге питання - 6а тема',
             topic: 'Перша тема',
             optionsAnswers: [
                 {

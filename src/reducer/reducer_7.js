@@ -1,7 +1,7 @@
 export default function () {
     return [
         {
-            topicNum: 7,
+            numTopic: 7,
             numQuestion: 1,
             question: 'Перше питання - 7а тема',
             topic: 'Перша тема',
@@ -29,9 +29,9 @@ export default function () {
             ]
         },
         {
-            topicNum: 1,
-            num: 2,
-            numQuestion: 'Друге питання - 7а тема',
+            numTopic: 7,
+            numQuestion: 2,
+            question: 'Друге питання - 7а тема',
             topic: 'Перша тема',
             optionsAnswers: [
                 {

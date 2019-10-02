@@ -1,72 +1,72 @@
 export default function () {
     return [
-        {numTopic: 1,
+        {numTopic: 0,
         topic: 'АНТИКОРУПЦІЙНЕ ЗАКОНОДАВСТВО УКРАЇНИ (100 тестів)'},
         {
-            numTopic: 2,
+            numTopic: 1,
             topic: 'Кодекс України про адміністративні правопорушення'
         },
         {
-            numTopic: 3,
+            numTopic: 2,
             topic: 'Підтримання публічного обвинувачення (400 тестів)'
         },
         {
-            numTopic: 4,
+            numTopic: 3,
             topic: 'Професійна етика прокурора'
         },
         {
-            numTopic: 5,
+            numTopic: 4,
             topic: 'ЕКПЛ'
         },
         {
-            numTopic: 6,
+            numTopic: 5,
             topic: 'Закон України про прокуратуру'
         },
         {
-            numTopic: 7,
+            numTopic: 6,
             topic: 'Кодекс адміністративного судочинства'
         },
         {
-            numTopic: 8,
+            numTopic: 7,
             topic: 'Кримінальне право України'
         },
         {
-            numTopic: 9,
+            numTopic: 8,
             topic: 'Конституція України'
         },
         {
-            numTopic: 10,
+            numTopic: 9,
             topic: 'Цивільний процесуальний кодекс України'
         },
         {
-            numTopic: 11,
+            numTopic: 10,
             topic: 'Юридична психологія'
         },
         {
-            numTopic: 12,
+            numTopic: 11,
             topic: 'Господарський кодекс України'
         },
         {
-            numTopic: 13,
+            numTopic: 12,
             topic: 'Господарський процесуальний України'
         },
         {
-            numTopic: 14,
+            numTopic: 13,
             topic: 'Робота з розгляду та вирішення звернень громадян'
         },
-        {numTopic: 15,
+        {numTopic: 14,
             topic: 'Забезпечення доступу до публічної інформації'},
-        {numTopic: 16,
+        {numTopic: 15,
             topic: 'Кримінально виконавче право'},
-        {numTopic: 17,
+        {numTopic: 16,
             topic: 'Кодекс України про адміністративні правопорушення'},
-        {numTopic: 18,
+        {numTopic: 17,
             topic: 'Цивільний кодекс України'},
-        {numTopic: 19,
+        {numTopic: 18,
             topic: '100 питань з різних тем'},
-        {numTopic: 20,
+        {numTopic: 19,
             topic: 'Питання на яких були помилки'},
-        {numTopic: 21,
+        {numTopic: 20,
             topic: 'Додати нове питання'},
     ]
 }
