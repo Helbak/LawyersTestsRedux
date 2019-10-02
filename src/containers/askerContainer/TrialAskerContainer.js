@@ -14,7 +14,7 @@ class TrialAskerContainer extends Component {
 }
 function mapStateToProps(state) {
     return {
-        topic: state.functionReducer
+        topic: state.selectTopicReducer
     }
 };
 

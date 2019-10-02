@@ -1,17 +1,15 @@
 import {combineReducers} from "redux";
-import reducerOne from './reducerOne';
-import reducerTwo from './reducerTwo';
-import reducerTopics from './reducerTopics'
-import startReducer from './startReducer'
-import functionReducer from './functionReducer'
+import reducer_1 from './reducer_1';
+import reducer_2 from './reducer_2';
+import reducerTopics from './reducerAllTopics'
+import selectTopicReducer from './selectTopicReducer'
 import pageReducer from './pageReducer'
 
 const allReducers = combineReducers({
     pageReducer: pageReducer,
-   functionReducer: functionReducer,
-    start: startReducer,
+    selectTopicReducer: selectTopicReducer,
     topics: reducerTopics,
-    quest1: reducerOne,
-    quest2: reducerTwo,
+    quest1: reducer_1,
+    quest2: reducer_2,
 });
 export default allReducers;

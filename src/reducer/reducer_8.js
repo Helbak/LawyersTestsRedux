@@ -1,10 +1,10 @@
 export default function () {
     return [
         {
-            topicNum: 2,
-            num: 1,
-            question: 'Перше питання',
-            topic: 'Друга тема',
+            topicNum: 8,
+            numQuestion: 1,
+            question: 'Перше питання - 8а тема',
+            topic: 'Перша тема',
             optionsAnswers: [
                 {
                     numOption: 'А',
@@ -29,10 +29,10 @@ export default function () {
             ]
         },
         {
-            topicNum: 2,
+            topicNum: 1,
             num: 2,
-            question: 'Друге питання',
-            topic: 'Друга тема',
+            numQuestion: 'Друге питання - 8а тема',
+            topic: 'Перша тема',
             optionsAnswers: [
                 {
                     numOption: 'А',

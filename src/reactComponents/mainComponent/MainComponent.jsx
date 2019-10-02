@@ -10,7 +10,6 @@ import {connect} from "react-redux";
 
 getComponent(){
     const page = this.props.page;
-    console.log(page);
     if (page===null||page==='start'){
         return <StartContainer/>
     };
@@ -36,7 +35,8 @@ getComponent(){
 }
 function mapStateToProps(state) {
     return {
-        page: state.pageReducer
+        page: state.pageReducer,
+        sty:state
     }
 };
 
