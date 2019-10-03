@@ -7,11 +7,15 @@ import { connect } from 'react-redux';
 
 
 class HeaderComponent extends Component {
+   backToStart(){
+       this.props.selectPage('start');
+       this.props.selectPage('restart')
+    };
     render() {
         return (
             <div className='header'>
                 <div className='header__high'>
-                    <button className='btn-header' onClick={() => this.props.selectPage('start')}>ПОВЕРНУТИСЬ ДО ВИБОРУ ТЕМ</button>
+                    <button className='btn-header' onClick={() => this.backToStart()}>ПОВЕРНУТИСЬ ДО ВИБОРУ ТЕМ</button>
                     <button className='btn-header' onClick={() => this.props.selectPage(this.props.topic)}>Перейти до тестів: {this.props.topic}</button>
                     {/*<button className='btn-header'>Показати відповіді</button>*/}
                     {/*<button className='btn-header'>Дадати питання</button>*/}

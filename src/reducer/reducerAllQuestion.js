@@ -69,7 +69,7 @@ export default function () {
         [
             {
                 numTopic: 1,
-                num: 1,
+                numQuestion: 1,
                 question: 'Перше питання   Друга тема',
                 topic: 'Друга тема',
                 optionsAnswers: [
@@ -97,7 +97,7 @@ export default function () {
             },
             {
                 numTopic: 1,
-                num: 2,
+                numQuestion: 2,
                 question: 'Друге питання   Друга тема',
                 topic: 'Друга тема',
                 optionsAnswers: [
@@ -155,9 +155,9 @@ export default function () {
             },
             {
                 numTopic: 2,
-                num: 2,
-                numQuestion: 'Друге питання - 3 тема',
-                topic: 'Перша тема',
+                numQuestion: 2,
+                question: 'Друге питання - 2 тема',
+                topic: 'Друга тема',
                 optionsAnswers: [
                     {
                         numOption: 'А',

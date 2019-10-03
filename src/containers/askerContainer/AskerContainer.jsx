@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
-import { connect } from 'react-redux';
 import './styles.less';
+import {selectQuestion} from "../../actions/selectQuestionAction";
+import { connect } from 'react-redux';
+import { bindActionCreators} from 'redux';
 
  class AskerContainer extends Component {
 
@@ -8,16 +10,19 @@ import './styles.less';
         return (
             <div className='asker'>
                 <div className='asker__left'>
-                    {this.props.quest1[0].question}
+                    {this.props.allQuestion[this.props.numTopic][0].question}
                 </div>
                 <div className='asker__center'>
-                    <button className='question'>{this.props.allQuestion[0][0].optionsAnswers[0].text}</button>
-                    <button className='question'>{this.props.allQuestion[0][0].optionsAnswers[1].text}</button>
-                    <button className='question'>{this.props.allQuestion[0][0].optionsAnswers[2].text}</button>
-                    <button className='question'>{this.props.allQuestion[0][0].optionsAnswers[3].text}</button>
+                    <button className='question'>{this.props.allQuestion[this.props.numTopic][0].optionsAnswers[0].text}</button>
+                    <button className='question'>{this.props.allQuestion[this.props.numTopic][0].optionsAnswers[1].text}</button>
+                    <button className='question'>{this.props.allQuestion[this.props.numTopic][0].optionsAnswers[2].text}</button>
+                    <button className='question'>{this.props.allQuestion[this.props.numTopic][0].optionsAnswers[3].text}</button>
                 </div>
                 <div className='asker__right'>
-                    RESULT
+                    <button className='window-right'> Правильних відповідей : 0</button>
+                    <button className='window-right'>Помилок : 0</button>
+                    <button className='window-right'>Питання № {this.props.numQuestion}</button>
+                    <button className='btn-right' onClick={() => this.props.selectQuestion(this.props.numQuestion)}>Наступне питання</button>
                 </div>
             </div>
         );
@@ -25,10 +30,12 @@ import './styles.less';
 }
 function mapStateToProps(state) {
     return {
-        quest1: state.quest1,
+        numQuestion: state.selectQuestion,
         numTopic: state.selectTopicReducer.numTopic,
         allQuestion: state.allQuestion
     }
 };
-
- export default connect(mapStateToProps)(AskerContainer)
+function mapDispatchToProps(dispatch) {
+    return bindActionCreators({selectQuestion: selectQuestion}, dispatch)
+}
+ export default connect(mapStateToProps, mapDispatchToProps)(AskerContainer)

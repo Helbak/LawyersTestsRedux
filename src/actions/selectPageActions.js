@@ -12,8 +12,13 @@ export const selectPage=(type)=> {
             payload: 'start'
         }
     }
+    if (type === 'restart') {
+        return {
+            type: 'question',
+            payload: 0
+        }
+    }
     if (type !== 'null') {
-        alert('Перейти до тестів по темі: ' + type);
         return {
             type: 'page',
             payload: 'asker'
