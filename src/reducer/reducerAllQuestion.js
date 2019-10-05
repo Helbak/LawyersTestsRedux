@@ -23,7 +23,7 @@ export default function () {
                     {
                         numOption: 'Б',
                         text: "Друга відповідь",
-                        isTrue: false
+                        isTrue: true
                     },
                     {
                         numOption: 'В',
@@ -33,7 +33,7 @@ export default function () {
                     {
                         numOption: 'Г',
                         text: "Четверта відповідь",
-                        isTrue: true
+                        isTrue: false
                     },
                 ]
             },
@@ -46,7 +46,7 @@ export default function () {
                     {
                         numOption: 'А',
                         text: "Перша відповідь",
-                        isTrue: false
+                        isTrue: true
                     },
                     {
                         numOption: 'Б',
@@ -61,7 +61,7 @@ export default function () {
                     {
                         numOption: 'Г',
                         text: "Четверта відповідь",
-                        isTrue: true
+                        isTrue: false
                     },
                 ]
             }
@@ -81,7 +81,7 @@ export default function () {
                     {
                         numOption: 'Б',
                         text: "Друга відповідь",
-                        isTrue: false
+                        isTrue: true
                     },
                     {
                         numOption: 'В',
@@ -91,7 +91,7 @@ export default function () {
                     {
                         numOption: 'Г',
                         text: "Четверта відповідь",
-                        isTrue: true
+                        isTrue: false
                     },
                 ]
             },

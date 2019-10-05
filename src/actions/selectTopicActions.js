@@ -4,7 +4,6 @@ export const actions=(type)=>{
         payload: {
             topic: type.topic,
             numTopic: type.numTopic
-
         }
     }
 };
